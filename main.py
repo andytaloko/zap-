@@ -1,7 +1,7 @@
 import os
 from telegram.ext import Updater
 
-updater = Updater(token=os.environ.get("6548277251:AAG2PMddqTTSRIyCIkxitm2C_Jo8CiIF0hY"))
+updater = Updater(token=os.environ.get("6548277251:AAG2PMddqTTSRIyCIkxitm2C_Jo8CiIF0hY")
 
 # rest of your code
 
