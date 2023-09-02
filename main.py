@@ -1,3 +1,12 @@
+# main.py
+from telegram.ext import Updater
+import settings
+
+updater = Updater(token=settings.6372799289:AAHNFkVjfCBvllvQE7p8U4sdHpSl2wgge2I)
+
+# rest of your code
+
+
 import os
 
 from telegram.ext import Updater
