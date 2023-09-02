@@ -13,7 +13,7 @@ class Property:
 from telegram.ext import Updater, CommandHandler
 import settings
 
-updater = Updater(token=settings.TELEGRAM_API_KEY)
+updater = Updater(token=settings."6548277251:AAG2PMddqTTSRIyCIkxitm2C_Jo8CiIF0hY")
 
 # Add handlers and other functionalities here
 
