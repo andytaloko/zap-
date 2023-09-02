@@ -13,4 +13,4 @@ updater = Updater(token=settings.TELEGRAM_API_KEY)
 updater.start_webhook(listen="0.0.0.0",
                       port=port,
                       url_path=settings.TELEGRAM_API_KEY)
-updater.bot.set_webhook("https://your-heroku-app-name.herokuapp.com/" + settings.TELEGRAM_API_KEY)
+updater.bot.set_webhook("https://zap-corretor.herokuapp.com/" + settings.TELEGRAM_API_KEY)
