@@ -1,12 +1,13 @@
 import os
-from telegram.ext import Updater
+from telegram.ext import Updater, CommandHandler
 
-updater = Updater(token=os.environ.get("TELEGRAM_BOT_TOKEN"))
+# Initialize the Updater
+token = os.environ.get("TELEGRAM_BOT_TOKEN")  # Make sure to set this env variable in Heroku
+updater = Updater(token=token, use_context=True)
 
-# rest of your code
+# Your other code here...
 
-# Your handlers here
+# Start the Bot
+port = int(os.environ.get("PORT", 8443))  # Also set the PORT env variable in Heroku
+updater.start_webhook(listen="0.0.0.0", port=port, url_path=token)
 
-port = int(os.environ.get('PORT', '8443'))
-updater.start_webhook(listen="0.0.0.0", port=port, url_path=settings.(6548277251:AAG2PMddqTTSRIyCIkxitm2C_Jo8CiIF0hY))
-updater.bot.set_webhook("https://zap-corretor-21afd1e16ec3.herokuapp.com/" + settings.6548277251:AAG2PMddqTTSRIyCIkxitm2C_Jo8CiIF0hY)
