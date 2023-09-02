@@ -2,7 +2,7 @@ import os
 import psycopg2
 
 # Read environment variables
-telegram_api_key = os.environ.get("6372799289:AAHNFkVjfCBvllvQE7p8U4sdHpSl2wgge2IY")
+telegram_api_key = os.environ.get("6548277251:AAG2PMddqTTSRIyCIkxitm2C_Jo8CiIF0hY")
 database_uri = os.environ.get("DATABASE_URI")
 
 # Connect to the PostgreSQL database
